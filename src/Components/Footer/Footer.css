@@ -13,6 +13,7 @@
     margin-bottom: 20px;
 }
 
+
 .footer .logo{
     margin-bottom: 30px;
 }
@@ -81,6 +82,9 @@
     .footer .install img {
         height: 35px;
     }
+    .footer {
+        margin-top: 100px;
+    }
 }
 
 @media(max-width:1024px){
@@ -117,13 +121,24 @@
 
 
  @media(max-width:500px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer .about{
+        margin: 10px;
+        margin-top: 85px;
+    }
      /* .footer .install  { 
          display: none;  
          margin-left: 35px; 
      } */
      .footer{
-        margin-top: 200px;
+        margin-top: 100px;
      }
+     .footer .install{
+        margin-top: -110px;
+    }
      /* .main img{
         display: none;
      }
@@ -136,8 +151,19 @@
      }
      .row{
         gap: 0px;
-
      }
-     
-    
+     .footer .footer-copyright {
+        width: 200%;
+    }
+        
  }  
+
+ @media(max-width:420px){
+    
+    .footer .about{
+        margin-top: 90px;
+    }
+    .footer .install{
+        margin-top: -114px;
+    }
+ }

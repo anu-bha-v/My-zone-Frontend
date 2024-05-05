@@ -42,7 +42,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className="col">
+        <div className="col about">
             <h4>About</h4>
             <Link to='/aboutus' style={linkStyle}><p  href="#">About Us</p></Link>
             <p href="#" >Delivery Information</p>
