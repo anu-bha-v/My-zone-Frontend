@@ -1,0 +1,143 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 65px;
+}
+
+
+.footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer .logo{
+    margin-bottom: 30px;
+}
+
+.footer h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    text-decoration: none;
+}
+
+.footer p{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin: 0 0 8px 0;
+}
+
+.col p:hover {
+    transform: scale(1.1);
+}
+
+.footer .follow{
+    margin-top: 20px;
+}
+
+.footer .follow i{
+    padding-right: 4px;
+    cursor: pointer;
+    color: #465b52;
+}
+
+.footer .col .icon img{
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.footer .col  img{
+    margin: 10px;
+
+}
+
+.footer .install img{
+    margin: 10px;
+    width: 60px;
+    height: 45px;
+
+}
+.footer .footer-copyright {
+    width: 100%;
+    padding: 10px 0;   
+}
+
+.footer .footer-copyright p{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:1280px){
+    .footer .install img {
+        height: 35px;
+    }
+}
+
+@media(max-width:1024px){
+    .footer {
+         margin-top: 0px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:800px){
+    .footer{
+        margin-top: 150px;
+        gap: 15px;
+    }
+    
+    .footer .install img {
+        margin-left: 40px;
+    }
+    .footer .install img{
+        margin: 0px;
+    }
+    
+}
+/* @media(max-width:790px){
+    .footer .install  {
+        display: none; */
+        /* margin-left: 35px; */
+    /* }
+
+} */
+
+
+
+ @media(max-width:500px){
+     /* .footer .install  { 
+         display: none;  
+         margin-left: 35px; 
+     } */
+     .footer{
+        margin-top: 200px;
+     }
+     /* .main img{
+        display: none;
+     }
+      .footer .follow .icon img{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+     }   */
+     .footer .col img{
+        margin: 0px;
+     }
+     .row{
+        gap: 0px;
+
+     }
+     
+    
+ }  

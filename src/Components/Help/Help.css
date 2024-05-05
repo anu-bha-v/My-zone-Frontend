@@ -1,0 +1,238 @@
+.helpus{
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.helpus-left{
+  position: absolute;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 400px;
+  padding-top: 120px;
+  line-height: 0.1;
+  z-index: 1;
+}
+
+.helpus-left h2 {
+  color: white;
+  font-size: 130px;
+  /* font-weight: 600; */
+  margin: 45px;
+  /* margin-left: 70px; */
+  margin-top: -35px;
+}
+
+.helpus-left p{
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+.helpus-right{
+  width: 100%;
+  height: 1005;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.helpus-right img {
+width: 100%;
+height: 40vh;
+object-fit: cover; /* This will ensure that the video covers the area fully */
+/* position: absolute; */
+/* top: 0; */
+left: 0;
+}
+
+.content{
+  display: grid;
+}
+
+.content img{
+  width: 35%;
+    height: 60vh;
+    margin: -380px 15px 58px 500px;
+    border-radius: 100px;
+    box-shadow: 30px 19px 20px darkgray;
+}
+
+.content p{
+  text-align: justify;
+  margin:  0px 30px;
+  margin-bottom: 100px;
+}
+
+.content2{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+.content2 h3{
+  font-size: 20px;
+  margin: 10px 35px;
+  text-align: center;
+}
+
+.content2 h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.content2 p{
+  text-align: center;
+  margin-inline: 280px;
+}
+
+.content2 img{
+  width: 30%;
+  height: 30%;
+  border: 0px solid black;
+  border-radius: 50px;
+  margin: 100px;
+}
+
+.content2 video{
+  width: 30%;
+  height: 30%;
+  border: 0px solid black;
+  border-radius: 50px;
+  margin: 100px;
+}
+
+.content1{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ margin-top: -400px;
+}
+
+.content1 h3{
+  font-size: 20px;
+  margin: 10px 35px;
+  text-align: center;
+}
+
+.content1 h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.content1 p{
+  text-align: center;
+  margin-inline: 280px;
+}
+
+.content1 img{
+  width: 30%;
+  height: 30%;
+  border: 0px solid black;
+  border-radius: 50px;
+  margin: 100px;
+}
+
+.content1 video{
+  width: 30%;
+  height: 30%;
+  border: 0px solid black;
+  border-radius: 50px;
+  margin: 100px;
+}
+@media(max-width:1280px){
+  .helpus-left{
+      padding-left: 100px;
+      
+  }
+  .helpus-left h2{
+    margin: -50px 0px 0px 270px;
+  }
+  .helpus-left p{
+      font-size: 60px;
+  }
+}
+
+
+
+@media(max-width:1024px){
+  .helpus-left {
+    padding: 50px 0px 0px 100px;
+  }
+
+  .helpus-left h2{
+      font-size: 80px;
+      /* margin: -15px 225px; */
+  }
+  .helpus-left p{
+      font-size: 50px;
+  }
+
+  .helpus-right img{
+      height: 30vh;
+  }
+}
+
+@media(max-width:800px){
+  .helpus-left{
+      padding-left: 30px;
+      top: 100px;
+        padding-top: 50px;
+  }
+  .helpus-left h2{
+      font-size: 50px;
+  }
+  .helpus-left p{
+      font-size: 40px;
+  }
+
+}
+
+@media(max-width:500px){
+  .helpus{
+      flex-direction: column;
+  }
+  .helpus-left{
+    margin: -85px;
+    margin-top: 0px;
+    padding-top: 44px;
+    left: -170px;
+
+  }
+
+  .content1 p {
+    text-align: center;
+    margin-inline: 280px;
+    margin: 0;
+}
+
+  .helpus-left p{
+      font-size: 50px;
+  }
+
+  .content img{
+    width: 57%;
+    height: 50vh;
+    margin: -389px 15px 58px 105px;
+  }
+
+  .content2 h2 {
+    text-align: center;
+
+  }
+
+  .content2 p {
+    margin-inline: 10px;
+  }
+
+  .content2 video{
+    width: 90%;
+    margin: 60px;
+  }
+  .helpus-right img{
+    height: 15%;
+}
+ 
+}
