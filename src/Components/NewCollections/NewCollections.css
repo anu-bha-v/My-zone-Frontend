@@ -71,6 +71,9 @@
 }
 
 @media(max-width:500px){
+    .new-collections {
+        padding-top: 20px;
+    }
 
     .collections{
         display: grid;

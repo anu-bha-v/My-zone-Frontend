@@ -195,9 +195,9 @@ left: 0;
       flex-direction: column;
   }
   .helpus-left{
-    margin: -85px;
+    margin: -56px;
     margin-top: 0px;
-    padding-top: 44px;
+    padding-top: 130px;
     left: -170px;
 
   }
@@ -232,7 +232,7 @@ left: 0;
     margin: 60px;
   }
   .helpus-right img{
-    height: 15%;
+    height: 45%;
 }
  
 }

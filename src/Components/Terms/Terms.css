@@ -195,9 +195,9 @@ left: 0;
       flex-direction: column;
   }
   .termscon-left{
-    margin: -85px;
+    margin: -56px;
     margin-top: 0px;
-    padding-top: 44px;
+    padding-top: 130px;
     left: -170px;
 
   }
@@ -226,13 +226,20 @@ left: 0;
   .content2 p {
     margin-inline: 10px;
   }
+  .content1 img {
+    width: 70%;
+    height: 30%;
+    border: 0px solid black;
+    border-radius: 50px;
+    /* margin: 100px; */
+}
 
   .content2 video{
     width: 90%;
     margin: 60px;
   }
   .termscon-right img{
-    height: 15%;
+    height: 45%;
 }
  
 }
