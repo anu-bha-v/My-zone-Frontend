@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
         <div className="hero-right">
             {/* <img src={hero_image} alt="" /> */}
-            <video src={hero_video} autoPlay loop></video>
+            <video src={hero_video} autoPlay loop muted></video>
         </div>
 
     </div>
