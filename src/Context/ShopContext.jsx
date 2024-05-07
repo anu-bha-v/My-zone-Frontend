@@ -26,7 +26,7 @@ const ShopContextProvider = (props) => {
             fetch('https://orbito-backend.onrender.com/getcart',{
                 method:'POST',
                 headers:{
-                    Accept:'appication/form-data',
+                    Accept:'application/form-data',
                     'auth-token':`${localStorage.getItem('auth-token')}`,
                     'content-Type':'application/json',
                 },
