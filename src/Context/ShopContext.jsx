@@ -18,12 +18,12 @@ const ShopContextProvider = (props) => {
     const[cartItems,setCartItems]=useState(getDefautCart());
 
     useEffect(()=>{
-        fetch('https://localhost:4000/allproducts')
+        fetch('https://orbito-backend.onrender.com/allproducts')
         .then((response)=>response.json())
         .then((data)=>setAll_Product(data))
 
         if (localStorage.getItem('auth-token')) {
-            fetch('https://localhost:4000/getcart',{
+            fetch('https://orbito-backend.onrender.com/getcart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -42,7 +42,7 @@ const ShopContextProvider = (props) => {
         setCartItems((prev) => ({...prev,[itemId]:prev[itemId]+1}))
         // console.log(cartItems);
         if(localStorage.getItem('auth-token')){
-            fetch('https://localhost:4000/addtocart',{
+            fetch('https://orbito-backend.onrender.com/addtocart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -59,7 +59,7 @@ const ShopContextProvider = (props) => {
     const removeFromCart = (itemId) =>{
         setCartItems((prev) => ({...prev,[itemId]:prev[itemId]-1}))
         if(localStorage.getItem('auth-token')){
-            fetch('https://localhost:4000/removefromcart',{
+            fetch('https://orbito-backend.onrender.com/removefromcart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -77,7 +77,7 @@ const ShopContextProvider = (props) => {
         // Set the cartItems state to the default empty cart
         setCartItems(getDefautCart());
         if(localStorage.getItem('auth-token')){
-            fetch('https://localhost:4000/removeallfromcart',{
+            fetch('https://orbito-backend.onrender.com/removeallfromcart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
