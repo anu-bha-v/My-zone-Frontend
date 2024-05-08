@@ -8,7 +8,7 @@ const Popular = () => {
   const [popularProducts,setPopularProducts] =useState([]);
 
   useEffect(()=>{
-    fetch('https://orbito-backend.onrender.com/popularinwomen')
+    fetch('https://localhost:4000/popularinwomen')
     .then((response)=>response.json())
     .then((data)=>setPopularProducts(data));
   },[])

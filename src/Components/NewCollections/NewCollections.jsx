@@ -8,7 +8,7 @@ const NewCollection = () => {
   const [new_collection,setNew_Collection] = useState([]);
 
   useEffect(()=>{
-    fetch('https://orbito-backend.onrender.com/newcollections')
+    fetch('https://localhost:4000/newcollections')
     .then((response)=>response.json())
     .then((data)=>setNew_Collection(data))
   },[])
