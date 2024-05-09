@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{ useState }from 'react' 
 import './ContactUs.css'
 import Swal from 'sweetalert2'
 import contactus from '../Assets/footbaner.jpg'
@@ -7,23 +7,53 @@ import video from '../Assets/contactvid.mp4'
 
 
 const ContactUs = () => {
+    
+    const [formData, setFormData] = useState({
+        fullname: '',
+        mobilenumber: '',
+        email: '',
+        subject: '',
+        description: ''
+    });
 
-    const handleClick = () => {
-        Swal.fire({
-          title: "Working on your issue.!",
-          width: 600,
-          padding: "3em",
-          color: "black",
-          background: "#bebebe url(/images/trees.png)",
-          backdrop: `
-            #white
-            url("/images/nyan-cat.gif")
-            left top
-            no-repeat
-          `
-        
-        });
-      }
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async () => {
+        try {
+            const response = await fetch('http://localhost:4000/contactus', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Ticket Raised!',
+                    text: 'Your ticket has been raised successfully!',
+                    confirmButtonColor: '#41B883', // Custom color
+                    confirmButtonText: 'OK'
+                });
+                setFormData({
+                    fullname: '',
+                    mobilenumber: '',
+                    email: '',
+                    subject: '',
+                    description: ''
+                });
+            } else {
+                alert('Failed to submit form.');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('An error occurred while submitting the form.');
+        }
+    };
+     
     return (
         <div className='contact'>
             <div className="contactus">
@@ -46,19 +76,19 @@ const ContactUs = () => {
             <div className="form">
             {/* <img src={banner} alt="" /> */}
             <p>Full Name</p>
-                <input name='fullname'  type="text" placeholder='Full Name' />
+                <input name='fullname'  type="text" placeholder='Full Name' value={formData.fullname} onChange={handleChange} />
                 <p>Mobile Number</p>
-                <input name='mobilenumber'  type="number" placeholder='Mobile Number'/>
+                <input name='mobilenumber'  type="number" placeholder='Mobile Number' value={setFormData.mobilenumber} onChange={handleChange} />
                 <p>E-mail</p>
-                <input name='email'  type="e-mail" placeholder='E-mail' />
+                <input name='email'  type="e-mail" placeholder='E-mail' value={formData.email} onChange={handleChange} />
                 <p>Subject</p>
-                <input name='subject'  type="text" placeholder='subject' />
+                <input name='subject'  type="text" placeholder='subject' value={formData.subject} onChange={handleChange} />
                 <div className='description'>
                 <p>Description</p>
-                <textarea name="description" id="" style={{outline:'none'}}></textarea>
+                <textarea name="description" value={formData.description} onChange={handleChange} id="" style={{outline:'none'}}></textarea>
                 </div>
                 <div className="button">
-                <button onClick={handleClick}>Submit</button>
+                <button onClick={handleSubmit} >Submit</button>
                 </div>
             </div>
             <div className="content2">
