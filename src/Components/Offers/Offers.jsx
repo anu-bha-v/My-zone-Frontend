@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link} from 'react-router-dom'
-import './Offers.css'
-import exclusive_image from '../Assets/animebanner.jpg'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Offers.css';
+import exclusive_image from '../Assets/animebanner.jpg';
 
 const Offers = () => {
   
@@ -17,7 +17,7 @@ const Offers = () => {
             <img src={exclusive_image} alt="" />
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Offers
+export default Offers;
