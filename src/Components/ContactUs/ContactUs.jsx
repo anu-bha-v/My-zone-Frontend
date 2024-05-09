@@ -1,10 +1,29 @@
 import React from 'react'
 import './ContactUs.css'
+import Swal from 'sweetalert2'
 import contactus from '../Assets/footbaner.jpg'
 import banner from '../Assets/contact.jpg'
 import video from '../Assets/contactvid.mp4'
+import { VscNoNewline } from 'react-icons/vsc'
 
 const ContactUs = () => {
+
+    const handleClick = () => {
+        Swal.fire({
+          title: "Working on your issue.!",
+          width: 600,
+          padding: "3em",
+          color: "black",
+          background: "#bebebe url(/images/trees.png)",
+          backdrop: `
+            #white
+            url("/images/nyan-cat.gif")
+            left top
+            no-repeat
+          `
+        
+        });
+      }
     return (
         <div className='contact'>
             <div className="contactus">
@@ -24,226 +43,23 @@ const ContactUs = () => {
 
                     <img src={banner} alt="" />
             </div>
-            <div className="content">
+            <div className="form">
             {/* <img src={banner} alt="" /> */}
-                <p>hello The books in the Acorn line provide an entertaining perspective on topics kids care about. 
-                    Your child will grow their reading confidence with the short chapters, each of which can be read 
-                    as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed to appeal 
-                    to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, 
-                    who launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame 
-                    and the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining
-                    perspective on topics kids care about. Your child will grow their reading confidence with the short
-                    chapters, each of which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading
-                    level, but is designed to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who
-                    launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and
-                    the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining perspective 
-                    on topics kids care about. Your child will grow their reading confidence with the short chapters, each of
-                    which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed 
-                    to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who launched 
-                    the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and the 
-                    exciting new Adventure Friends series.
-                    hello The books in the Acorn line provide an entertaining perspective on topics kids care about. 
-                    Your child will grow their reading confidence with the short chapters, each of which can be read 
-                    as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed to appeal 
-                    to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, 
-                    who launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame 
-                    and the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining
-                    perspective on topics kids care about. Your child will grow their reading confidence with the short
-                    chapters, each of which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading
-                    level, but is designed to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who
-                    launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and
-                    the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining perspective 
-                    on topics kids care about. Your child will grow their reading confidence with the short chapters, each of
-                    which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed 
-                    to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who launched 
-                    the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and the 
-                    exciting new Adventure Friends series.hello The books in the Acorn line provide an entertaining perspective on topics kids care about. 
-                    Your child will grow their reading confidence with the short chapters, each of which can be read 
-                    as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed to appeal 
-                    to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, 
-                    who launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame 
-                    and the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining
-                    perspective on topics kids care about. Your child will grow their reading confidence with the short
-                    chapters, each of which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading
-                    level, but is designed to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who
-                    launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and
-                    the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining perspective 
-                    on topics kids care about. Your child will grow their reading confidence with the short chapters, each of
-                    which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed 
-                    to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who launched 
-                    the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and the 
-                    exciting new Adventure Friends series.
-                    hello The books in the Acorn line provide an entertaining perspective on topics kids care about. 
-                    Your child will grow their reading confidence with the short chapters, each of which can be read 
-                    as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed to appeal 
-                    to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, 
-                    who launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame 
-                    and the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining
-                    perspective on topics kids care about. Your child will grow their reading confidence with the short
-                    chapters, each of which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading
-                    level, but is designed to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who
-                    launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and
-                    the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining perspective 
-                    on topics kids care about. Your child will grow their reading confidence with the short chapters, each of
-                    which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed 
-                    to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who launched 
-                    the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and the 
-                    exciting new Adventure Friends series.hello The books in the Acorn line provide an entertaining perspective on topics kids care about. 
-                    Your child will grow their reading confidence with the short chapters, each of which can be read 
-                    as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed to appeal 
-                    to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, 
-                    who launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame 
-                    and the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining
-                    perspective on topics kids care about. Your child will grow their reading confidence with the short
-                    chapters, each of which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading
-                    level, but is designed to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who
-                    launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and
-                    the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining perspective 
-                    on topics kids care about. Your child will grow their reading confidence with the short chapters, each of
-                    which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed 
-                    to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who launched 
-                    the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and the 
-                    exciting new Adventure Friends series.
-                    hello The books in the Acorn line provide an entertaining perspective on topics kids care about. 
-                    Your child will grow their reading confidence with the short chapters, each of which can be read 
-                    as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed to appeal 
-                    to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, 
-                    who launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame 
-                    and the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining
-                    perspective on topics kids care about. Your child will grow their reading confidence with the short
-                    chapters, each of which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading
-                    level, but is designed to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who
-                    launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and
-                    the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining perspective 
-                    on topics kids care about. Your child will grow their reading confidence with the short chapters, each of
-                    which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed 
-                    to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who launched 
-                    the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and the 
-                    exciting new Adventure Friends series.hello The books in the Acorn line provide an entertaining perspective on topics kids care about. 
-                    Your child will grow their reading confidence with the short chapters, each of which can be read 
-                    as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed to appeal 
-                    to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, 
-                    who launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame 
-                    and the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining
-                    perspective on topics kids care about. Your child will grow their reading confidence with the short
-                    chapters, each of which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading
-                    level, but is designed to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who
-                    launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and
-                    the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining perspective 
-                    on topics kids care about. Your child will grow their reading confidence with the short chapters, each of
-                    which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed 
-                    to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who launched 
-                    the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and the 
-                    exciting new Adventure Friends series.
-                    hello The books in the Acorn line provide an entertaining perspective on topics kids care about. 
-                    Your child will grow their reading confidence with the short chapters, each of which can be read 
-                    as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed to appeal 
-                    to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, 
-                    who launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame 
-                    and the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining
-                    perspective on topics kids care about. Your child will grow their reading confidence with the short
-                    chapters, each of which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading
-                    level, but is designed to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who
-                    launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and
-                    the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining perspective 
-                    on topics kids care about. Your child will grow their reading confidence with the short chapters, each of
-                    which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed 
-                    to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who launched 
-                    the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and the 
-                    exciting new Adventure Friends series.hello The books in the Acorn line provide an entertaining perspective on topics kids care about. 
-                    Your child will grow their reading confidence with the short chapters, each of which can be read 
-                    as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed to appeal 
-                    to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, 
-                    who launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame 
-                    and the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining
-                    perspective on topics kids care about. Your child will grow their reading confidence with the short
-                    chapters, each of which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading
-                    level, but is designed to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who
-                    launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and
-                    the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining perspective 
-                    on topics kids care about. Your child will grow their reading confidence with the short chapters, each of
-                    which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed 
-                    to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who launched 
-                    the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and the 
-                    exciting new Adventure Friends series.
-                    hello The books in the Acorn line provide an entertaining perspective on topics kids care about. 
-                    Your child will grow their reading confidence with the short chapters, each of which can be read 
-                    as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed to appeal 
-                    to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, 
-                    who launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame 
-                    and the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining
-                    perspective on topics kids care about. Your child will grow their reading confidence with the short
-                    chapters, each of which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading
-                    level, but is designed to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who
-                    launched the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and
-                    the exciting new Adventure Friends series. The books in the Acorn line provide an entertaining perspective 
-                    on topics kids care about. Your child will grow their reading confidence with the short chapters, each of
-                    which can be read as a stand-alone story. Each book has a Grade 1 Scholastic reading level, but is designed 
-                    to appeal to kids in kindergarten through second grade.
-                    "As a teacher, it was hard to find fresh and engaging stories for this age group," says Carella, who launched 
-                    the Acorn line. "I wanted to create books that could really light a fire in kids." 
-                    The Acorn line includes the sweet read A Friend for Dragon, by author Dav Pilkey of Dog Man fame and the 
-                    exciting new Adventure Friends series. </p>
-                
-                
+            <p>Full Name</p>
+                <input name='fullname'  type="text" placeholder='Full Name' />
+                <p>Mobile Number</p>
+                <input name='mobilenumber'  type="number" placeholder='Mobile Number'/>
+                <p>E-mail</p>
+                <input name='email'  type="e-mail" placeholder='E-mail' />
+                <p>Subject</p>
+                <input name='subject'  type="text" placeholder='subject' />
+                <div className='description'>
+                <p>Description</p>
+                <textarea name="description" id="" style={{outline:'none'}}></textarea>
+                </div>
+                <div className="button">
+                <button onClick={handleClick}>Submit</button>
+                </div>
             </div>
             <div className="content2">
                 <h3>OUR MISSION</h3>

@@ -47,6 +47,10 @@
     cursor: pointer;
 }
 
+.offers-left button:hover{ 
+    background: #3a9cf9;
+  }
+
 .offers-right{
     flex: 1;
     display: flex;

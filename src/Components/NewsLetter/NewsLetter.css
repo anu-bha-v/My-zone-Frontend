@@ -54,6 +54,12 @@
     cursor: pointer;
     border: none;
     margin-right: -1px;
+    transition: background 0.3s ease;
+}
+
+.newsletter button:hover{ 
+    background: whitesmoke;
+    color: black;
 }
 
 @media(max-width:1280px){

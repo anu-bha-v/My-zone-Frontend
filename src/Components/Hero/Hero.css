@@ -53,6 +53,9 @@
     font-size: 22px;
     font-weight: 500;
 }
+.hero-latest-btn:hover{ 
+    background: #dd0404;
+}
 
 .hero-right{
     

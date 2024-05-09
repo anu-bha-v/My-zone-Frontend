@@ -97,7 +97,7 @@ left: 0;
 }
 
 .content2 video{
-  width: 30%;
+  width: 80%;
   height: 30%;
   border: 0px solid black;
   border-radius: 50px;
@@ -123,8 +123,7 @@ left: 0;
   margin-bottom: 20px;
 }
 .content1 p{
-  text-align: center;
-  margin-inline: 280px;
+  margin: 0px 120px;
 }
 
 .content1 img{
@@ -145,7 +144,9 @@ left: 0;
 @media(max-width:1280px){
   .termscon-left{
       padding-left: 100px;
-      
+  }
+  .content1 h3{
+    margin-top: 30px;
   }
   .termscon-left h2{
     margin: -50px 0px 0px 270px;
@@ -181,6 +182,16 @@ left: 0;
       top: 100px;
         padding-top: 50px;
   }
+  .content2 h2 {
+    margin: 0px 10px 20px 10px;
+    text-align: center;
+  }
+  .content2 p {
+    margin: 30px;
+  }
+  .content1 p{
+    margin: 0px 80px;
+  }
   .termscon-left h2{
       font-size: 50px;
   }
@@ -206,7 +217,10 @@ left: 0;
     text-align: center;
     margin-inline: 280px;
     margin: 0;
-}
+  }
+  .content1 h3{
+    margin-top: 60px;
+  }
 
   .termscon-left p{
       font-size: 50px;
@@ -220,7 +234,6 @@ left: 0;
 
   .content2 h2 {
     text-align: center;
-
   }
 
   .content2 p {

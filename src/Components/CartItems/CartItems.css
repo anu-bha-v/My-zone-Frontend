@@ -73,6 +73,10 @@
     cursor: pointer;
 }
 
+.cartitem-total button:hover{
+    background: #dd0404;
+}
+
 .cartitems-promocode{
     flex: 1;
     font-size: 16px;
@@ -107,6 +111,10 @@
     background: black;
     color: white;
     cursor: pointer;
+    border: none;
+}
+.cartitems-promobox button:hover{
+    background: #dd0404;
 }
 
 @media(max-width:1280px){

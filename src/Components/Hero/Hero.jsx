@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 import './Hero.css'
 // import hand_icon from '../Assets/hand_icon.png'
 import arrow_icon from '../Assets/arrow.png'
@@ -18,10 +19,10 @@ const Hero = () => {
                 <p>Our Anime</p>
                 <p>World, Dive In!</p>
             </div>
-            <div className="hero-latest-btn">
+            <Link to="/mens" style={{textDecoration:'none'}}><div className="hero-latest-btn">
                 <div>Explore Now</div>
                 <img src={arrow_icon} alt="" />
-            </div>
+            </div></Link>
         </div>
         <div className="hero-right">
             {/* <img src={hero_image} alt="" /> */}

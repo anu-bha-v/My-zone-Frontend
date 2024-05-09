@@ -1,3 +1,7 @@
+.contact{
+  background: #f6f6f6;
+}
+
 .contactus{
   height: 100vh;
   display: flex;
@@ -15,6 +19,43 @@
   padding-top: 120px;
   line-height: 0.1;
   z-index: 1;
+}
+
+.form input{
+  height: 31px;
+  width: 100%;
+  /* margin-left: -95px; */
+  border: 1px solid #bebebe;
+  outline: none;
+  color: #5c5c5c;
+  font-size: 15px;
+  margin-bottom: 30px;
+  font-weight: 450;
+  border-radius: 3px;
+
+} 
+
+.description textarea {
+  width: 100%;
+  height: 30vh;
+  border: 1px solid #bebebe;
+}
+
+.button button{
+  width: 100%;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #bebebe;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button button:hover{ 
+  background: #b10202;
 }
 
 .contactus-left h2 {
@@ -48,22 +89,22 @@ object-fit: cover; /* This will ensure that the video covers the area fully */
 left: 0;
 }
 
-.content{
+.form{
   display: grid;
+  margin: 20px 150px;
 }
 
-.content img{
+/* .content img{
   width: 35%;
     height: 60vh;
     margin: -380px 15px 58px 500px;
     border-radius: 100px;
     box-shadow: 30px 19px 20px darkgray;
-}
+} */
 
-.content p{
+.form p{
   text-align: justify;
-  margin:  0px 30px;
-  margin-bottom: 100px;
+  margin:  0px 0px;
 }
 
 .content2{
@@ -153,6 +194,9 @@ left: 0;
   .contactus-left p{
       font-size: 60px;
   }
+  .form {
+    margin: 20px 130px;
+  }
 }
 
 
@@ -173,6 +217,16 @@ left: 0;
   .contactus-right img{
       height: 30vh;
   }
+  .content2 h2 {
+    margin: 0px 10px 20px 10px;
+    text-align: center;
+  }
+  .content2 p {
+    margin: 30px;
+  }
+  .form {
+    margin: 20px 100px;
+  }
 }
 
 @media(max-width:800px){
@@ -187,6 +241,9 @@ left: 0;
   .contactus-left p{
       font-size: 40px;
   }
+  .form {
+    margin: 20px 70px;
+  }
 
 }
 
@@ -199,7 +256,6 @@ left: 0;
     margin-top: 0px;
     padding-top: 130px;
     left: -170px;
-
   }
 
   .content1 p {
@@ -233,6 +289,9 @@ left: 0;
   }
   .contactus-right img{
     height: 45%;
-}
+  }
+  .form {
+    margin: 20px 50px;
+  }
  
 }

@@ -81,10 +81,11 @@
     font-weight: 500px;
     background: #b10202;
     cursor: pointer; 
+    transition: background 0.3s ease;
 }
 
-.nav-login-cart button:active{
-    background: #920202;
+.nav-login-cart button:hover{ 
+    background: #dd0404;
 }
 
 .nav-cart-count{
