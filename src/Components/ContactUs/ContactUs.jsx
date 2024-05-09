@@ -4,7 +4,7 @@ import Swal from 'sweetalert2'
 import contactus from '../Assets/footbaner.jpg'
 import banner from '../Assets/contact.jpg'
 import video from '../Assets/contactvid.mp4'
-import { VscNoNewline } from 'react-icons/vsc'
+
 
 const ContactUs = () => {
 
